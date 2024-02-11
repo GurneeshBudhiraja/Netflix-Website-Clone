@@ -12,104 +12,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
   <title>Netflix Canada - Watch TV Shows Online, Watch Movies Online</title>
-  <link rel="stylesheet" href="build.css">
+  <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-black box-border text-white flex flex-col mb-10 items-center sm:overflow-x-hidden">
-  <div class="relative bg-cover sm:bg-cover h-[80vh] w-full bg-no-repeat left-0 sm:static bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/f5106312-05b7-4d50-8160-9f28090c28c0/CA-en-20240205-popsignuptwoweeks-perspective_alpha_website_medium.jpg')]">
+<body class="bg-black box-border text-white flex flex-col">
+  <div class="bg-cover h-[77vh] sm:h-[65vh] md:h-[80vh]"
+    style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/f5106312-05b7-4d50-8160-9f28090c28c0/CA-en-20240205-popsignuptwoweeks-perspective_alpha_website_medium.jpg);">
     <div class="absolute inset-0 bg-gradient-to-t from-[#000000c2] via-[#0000008f] to-[#000000c5]"></div>
-    <header class="mt-6 flex justify-around items-center brightness-100 w-[100%] gap-24">
-      <div><img class="h-10" src="images/logo.svg" alt="Netflix"></div>
-      <div class="flex items-center justify-between gap-10">
+    <header
+      class="mt-6 mb-1 flex justify-around sm:justify-between sm:px-10 items-center brightness-100 w-[100%] h-fit">
+      <div><img class="h-6 md:h-10" src="images/logo.svg" alt="Netflix"></div>
+      <div class="flex items-center justify-between gap-5 md:gap-7">
         <button
-          class="font-medium border border-solid w-24 h-fit text-nowrap py-1 text-lg text-white cursor-default">Log
+          class="font-medium border border-solid border-gray-400 rounded-md w-16 h-7 text-nowrap py-1 text-sm text-white cursor-default flex items-center justify-center">Log
           In</button>
         <button
-          class="flex items-center justify-center font-medium rounded-md bg-red-600 w-24 h-fit text-nowrap py-1.5 text-lg text-white cursor-pointer hover:bg-red-700 transition-colors">Sign
+          class="flex items-center justify-center font-medium rounded-md bg-red-600 w-16 h-7 text-nowrap py-1.5 text-sm text-white cursor-pointer hover:bg-red-700 transition-colors">Sign
           up</button>
       </div>
     </header>
-    <div class="-mt-5 flex flex-col items-center absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%]">
-      <p class="font-extrabold text-white text-5xl mb-6">Unlimited movies, TV shows, and more</p>
-      <p class="text-2xl mb-6">Watch anywhere. Cancel anytime.</p>
-      <p class="text-xl font-normal">Ready to watch? Enter your email to create or restart your membership.</p>
-      <form action="" class="mt-6 text-nowrap space-x-5 w-3/5 flex justify-center items-center">
+    <div
+      class="flex flex-col items-center absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] w-[90%] text-center -mt-14 sm:-mt-40 md:-mt-14">
+      <p class="font-bold text-white text-3xl mb-6 text-center md:text-4xl md:font-extrabold lg:text-5xl">Unlimited movies, TV
+        shows, and more</p>
+      <p class="text-lg mb-6 md:text-xl lg:text-2xl">Watch anywhere. Cancel anytime.</p>
+      <p class="text-lg md:text-xl lg:text-2xl">Ready to watch? Enter your email to create or restart your membership.</p>
+      <form action=""
+        class="mt-6 text-wrap w-full flex flex-col sm:flex-row sm:w-[80%] lg:w-auto justify-center items-center gap-4">
         <input type="text" placeholder="Email address"
-          class="border border-solid rounded-sm border-gray-400 bg-[#000000b2] w-[75%] px-3 py-4">
+          class="border border-solid rounded-sm border-gray-400 bg-[#00000085] w-[85%] h-11 px-3 py-4 sm:py-5 lg:py-5 lg:text-xl outline-white outline-offset-4 outline-1 lg:w-64">
         <input type="submit" value="Get Started >"
-          class="w-[25%] bg-red-600 font-bold px-2 py-4 rounded-md text-lg hover:cursor-pointer hover:bg-red-700 transition-colors ">
+          class="w-fit h-12 bg-red-600 font-bold px-4  rounded-md text-lg hover:cursor-pointer hover:bg-red-700 transition-colors flex items-center justify-center lg:w-auto">
       </form>
     </div>
-    <div
-      class="absolute bottom-[4rem] left-2/4 -translate-x-2/4 -translate-y-2/4 flex items-center justify-center py-5 bg-gradient-to-tr from-[#000412] from-25% via-[#101948] via-38%  to-[#620c3c] to-100% w-3/4">
-      <div class="mr-4"><img src="images/popcorn.svg" alt="Popcorn Bucket"></div>
-      <div>
-        <p class="font-semibold text-lg">The Netflix you love for just $5.99.</p>
-        <p>Get the Standard with ads plan.</p>
-        <a href="#" class="text-blue-400 underline underline-offset-4">Learn More <i
-            class="fa-solid fa-angle-right"></i></a>
-      </div>
-    </div>
   </div>
-  <div class="flex mt-20 justify-center items-center w-3/4 z-10">
-    <div class="flex flex-col justify-around gap-5">
-      <p class="font-extrabold text-5xl">Enjoy on your TV</p>
-      <p class="font-semibold text-xl w-3/4 text-wrap">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+  <div class="flex flex-col mt-60 md:mt-20 justify-center items-center w-full z-10 md:flex-row md:px-4 xl:w-75%">
+    <div class="flex flex-col justify-center items-center gap-5 text-center md:items-start md:text-start md:ml-6">
+      <p class="font-bold text-2xl md:text-3xl md:font-extrabold">Enjoy on your TV</p>
+      <p class="font-normal text-lg text-wrap">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
         Blu-ray players, and more.</p>
     </div>
-    <div class="relative">
+    <div class="relative w-4/5">
       <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="Tv Screen"
-        class="w-4/5 relative -z-10 ">
-      <video muted autoplay loop class="absolute -top-1 left-16 object-center object-contain -z-20 h-full w-3/5">
+        class=" relative -z-10 ">
+      <video muted autoplay loop class="absolute -top-1 left-16 object-center object-contain -z-20 h-full w-3/5 lg:left-[6rem]">
         <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
           type="video/mp4">
       </video>
     </div>
   </div>
-  <div class="h-2 bg-[#232323] w-full mt-5"></div>
-  <div class="flex mt-10 justify-center items-center w-3/4  ">
-    <div class="relative">
+  <div class="h-2 bg-[#232323] w-full mt-5 mb-5"></div>
+  <div class="flex flex-col mt-60 md:my-10 justify-center items-center w-full z-10 md:flex-row-reverse md:px-4 xl:w-75%">
+    <div class="flex flex-col justify-center items-center gap-5 text-center md:items-start md:text-start md:ml-6">
+      <p class="font-bold text-2xl md:text-3xl lg:text-4xl md:font-extrabold">Watch everywhere</p>
+      <p class="font-normal text-lg text-wrap lg:text-xl">Stream unlimited movies and TV shows on your phone, tablet,
+        laptop, and TV.</p>
+    </div>
+    <div class="relative w-4/5">
       <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="Tv Screen"
         class="w-4/5 relative -z-10 ">
-      <video muted autoplay loop class="absolute -top-16 left-24 object-center object-contain -z-20 h-full w-2/4">
+      <video muted autoplay loop
+        class="absolute -top-[2rem] lg:-top-[3rem] left-[6rem] md:left-[3rem] lg:left-[5rem] object-center object-contain -z-20 h-full w-2/4">
         <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
           type="video/mp4">
       </video>
     </div>
-    <div class="flex flex-col justify-around gap-5">
-      <p class="font-extrabold text-5xl">Watch everywhere</p>
-      <p class="font-semibold text-xl w-3/4 text-wrap">Stream unlimited movies and TV shows on your phone, tablet,
-        laptop, and TV.</p>
-    </div>
   </div>
-  <div class="h-2 bg-[#232323] w-full mt-5"></div>
-  <div class="flex mt-10 justify-center items-center w-3/5  ">
-    <div class="flex flex-col justify-around gap-5 mr-5">
-      <p class="font-extrabold text-5xl">Create profiles for kids</p>
-      <p class="font-semibold text-xl w-3/4 text-wrap">Send kids on adventures with their favorite characters in a space
+  <div class="h-2 bg-[#232323] w-full mt-5 mb-5"></div>
+  <div class="flex flex-col mt-60 md:my-10 justify-center items-center w-full z-10 md:flex-row md:px-4 xl:w-75%">
+    <div class="flex flex-col justify-center items-center gap-5 text-center md:items-start md:text-start md:ml-6 xl:ml-10">
+      <p class="font-bold text-2xl md:text-3xl md:font-extrabold lg:text-4xl ">Create profiles for kids</p>
+      <p class="font-normal text-lg text-wrap lg:text-xl">Send kids on adventures with their favorite characters in a space
         made just for them—free with your membership.</p>
     </div>
     <img
       src="https://occ-0-70-1723.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55"
-      alt="Tv Screen">
+      alt="Tv Screen" class="md:w-[50%]">
+  </div>
+  <div class="h-2 bg-[#232323] w-full mt-5 mb-5"></div>
+  <div class="flex flex-col mt-60 md:my-10 justify-center items-center w-full z-10 md:px-4 md:flex-row-reverse">
+    <div class="flex flex-col justify-center items-center gap-5 text-center md:items-start md:text-start md:ml-6">
+      <p class="font-bold text-2xl md:text-3xl md:font-extrabold lg:text-4xl">Download your shows to watch offline</p>
+      <p class="font-normal text-lg text-wrap lg:text-xl">Watch on a plane, train, or submarine...</p>
+    </div>
+    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Tv Screen" class="md:w-[50%]">
   </div>
   <div class="h-2 bg-[#232323] w-full mt-5"></div>
-  <div class="flex mt-10 justify-center items-center w-3/5  ">
-    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Tv Screen">
-    <div class="flex flex-col justify-around gap-5 w-full">
-      <p class="font-extrabold text-5xl w-full">Download your shows to watch offline</p>
-      <p class="font-semibold text-xl w-3/4 text-wrap">Watch on a plane, train, or submarine...</p>
+  <div class="flex flex-col items-center justify-center gap-5 w-full text-wrap text-center">
+    <div class="mt-20 text-lg tracking-wide sm:w-[80%] lg:font-semibold">Ready to watch? Enter your email to create or restart your
+      membership.
     </div>
-  </div>
-  <div class="h-2 bg-[#232323] w-full mt-5"></div>
-  <div class="flex flex-col items-center gap-10 w-full text-nowrap">
-    <div class="mt-20 text-xl tracking-wider">Ready to watch? Enter your email to create or restart your membership.
-    </div>
-    <form action="/" class="flex w-3/5 justify-center gap-2">
+    <form action="/" class="flex flex-col justify-center items-center gap-2 w-full sm:flex-row sm:w-[80%] md:w-[70%] lg:w-[50%] sm:mb-5">
       <input type="text" placeholder="Email address"
-        class="bg-[#ffffff1f] px-3 py-4 rounded-md border border-solid border-gray-200 w-[45%]">
+        class="bg-[#ffffff1f] w-[80%] px-4 py-3 rounded-md border border-solid border-gray-200 ">
       <input type="button" value="Get Started >"
-        class="bg-red-600 hover:bg-red-700 transition-colors w-[10%] cursor-pointer font-bold rounded-md">
+        class="bg-red-600 hover:bg-red-700 transition-colors cursor-pointer font-bold rounded-md p-4 sm:p-3 mb-5 sm:mb-0">
     </form>
   </div>
   </div>
